@@ -1,0 +1,86 @@
+BODY {
+	background-color:#FFFFCC;			
+	scrollbar-highlight-color:#009900;	
+	scrollbar-shadow-color:#009900;		
+	scrollbar-3dlight-color:#FFD700;	
+	scrollbar-arrow-color:#FFD700;		
+	scrollbar-track-color:#FFFFCC;	
+	text-align: center;
+    	
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+	color:#009900;	
+	
+}
+h4{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline; 
+	color:#009900;   
+}
+.texto{
+    text-align: center;
+	color:#009900;	
+    padding: 30px ;
+}
+/* Linha no topo da pagina*/
+.hr{
+    border-top: 2px solid #009900;
+    
+}
+.logoPanAmericano{
+    padding: 15px;
+
+}
+
+/* Estilos para a galeria de imagens */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ; /* Distribui as imagens igualmente com espaço entre elas */
+    max-width: 1000px; /* Define a largura máxima da galeria */
+    margin: 0 auto; /* Centraliza a galeria horizontalmente na tela */
+    padding: 10px; /* Adiciona um espaço entre a galeria e a borda da tela */
+}
+
+.image-container {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Espaçamento entre as imagens verticalmente */
+}
+
+/* Esconde o texto de descrição por padrão */
+.textoModalidade {
+    display: none;
+    position: relative;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(157, 239, 136, 0.8);
+    padding: 35px;
+    font-size: small;
+    color: #009900;
+    max-width: 200px;
+    transition: bottom 0.3s ease;
+    margin: 0 auto; /* Centraliza o texto de descrição horizontalmente */
+}
+
+/* Quando o mouse passa sobre o contêiner da imagem, exibe o texto de descrição e amplia a imagem */
+.image-container:hover {
+    transform: scale(1.01); /* Amplia a imagem em 5% */
+    box-shadow: 0 0 10px rgba(20, 236, 0, 0.76); /* Adiciona uma sombra à imagem */
+}
+
+/* Quando o mouse passa sobre o contêiner da imagem, exibe o texto de descrição */
+.image-container:hover .textoModalidade {
+    display:  block;
+    bottom: 0; /* Move o texto de descrição para cima */
+}
+
+
+
+

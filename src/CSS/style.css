@@ -1,0 +1,97 @@
+BODY {
+    background-color: #FFFFCC;
+    scrollbar-highlight-color: #009900;
+    scrollbar-shadow-color: #009900;
+    scrollbar-3dlight-color: #FFD700;
+    scrollbar-arrow-color: #FFD700;
+    scrollbar-track-color: #FFFFCC;
+    text-align: center;
+
+}
+
+.marquee-text {
+    font-size: 16px;
+    animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(35, 41, 224);
+    }
+
+    25% {
+        color: rgb(17, 193, 35);
+    }
+
+    50% {
+        color: rgb(209, 40, 236);
+    }
+
+    75% {
+        color: rgb(235, 44, 76);
+    }
+
+    100% {
+        color: rgb(34, 163, 214);
+    }
+}
+
+a {
+    color: #009900;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: black;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #009900;
+
+}
+
+.hora {
+    color: #009900
+}
+
+.texto {
+    text-align: justify;
+    color: #009900;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #009900;
+}
+
+h6 {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #009900;
+}
+
+.hr {
+    border-top: 2px solid #009900;
+
+}
+
+.base {
+    margin: 0 auto;
+    width: 100%;
+    text-align: justify;
+    color: #009900;
+}
+
+footer {
+    font-weight: bold;
+    color: #009900;
+}
